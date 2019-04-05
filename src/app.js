@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 const accounData = fs.readFileSync(path.join(__dirname, 'json', 'accounts.json'), 'utf8');
-const userData = fs.readFileSync(path.join(__dirname, 'json', 'user.json'), 'utf8');
+const userData = fs.readFileSync(path.join(__dirname, 'json', 'users.json'), 'utf8');
 
 const accounts = JSON.parse(accounData);
 const users = JSON.parse(userData);
